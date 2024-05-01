@@ -1,0 +1,50 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.Aluno;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Quantos alunos serão digitados? ");
+		int n = sc.nextInt();
+		
+		String aluno = " ";
+		double nota1 = 0.0;
+		double nota2 = 0.0;
+		List<Aluno> listaDeAlunos = new ArrayList<>();
+		
+		for (int i=1; i<=n; i++) {
+			System.out.println("Digite nome, primeira e segunda nota do " + i + "º aluno: ");
+			aluno = sc.nextLine();
+			nota1 = sc.nextDouble();
+			nota2 = sc.nextDouble();
+			
+			Aluno alunos = new Aluno(aluno, nota1, nota2);
+			listaDeAlunos.add(alunos);
+		}
+		
+		for (int i=0; i < listaDeAlunos.size(); i++) {
+			calculaMediaeAprovado(listaDeAlunos);
+	
+		}
+		
+			
+		sc.close();
+
+	}
+	
+	public static void calculaMediaeAprovado(List<Aluno> listaDeAlunos) {
+		for (Aluno alunos: listaDeAlunos) {
+			double media = (alunos.nota1 + alunos.nota2)/2;
+		}
+		
+	}
+	
+	
+
+}

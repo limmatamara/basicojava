@@ -1,0 +1,21 @@
+package estruturaCondicional;
+
+import java.util.Scanner;
+
+public class proposto5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int codigo = sc.nextInt();
+		int quantidade = sc.nextInt();
+		
+		if (codigo == 1) {
+			double preco = 4.00;
+			double valorFinal = preco * quantidade;
+			System.out.printf("Total: R$ %.2f%n", valorFinal);
+		}
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package estruturaCondicional;
+
+import java.util.Scanner;
+
+public class proposto6 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double valor = sc.nextDouble();
+		sc.close();
+
+	}
+
+}

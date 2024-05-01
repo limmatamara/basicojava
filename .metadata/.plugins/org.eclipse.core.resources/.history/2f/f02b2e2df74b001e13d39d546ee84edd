@@ -1,0 +1,33 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Quantas pessoas serão digitadas? ");
+		int n = sc.nextInt();
+		sc.next();
+		
+		double altura = 0.0;
+		char genero = ' ';
+		
+		
+		for (int i=1; i<=n ; i++) {
+			System.out.print("Altura da " + n + "a pessoa: ");
+			sc.next();
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

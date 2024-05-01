@@ -1,0 +1,12 @@
+package entities;
+
+public class Employee {
+	
+	public Integer id;
+	public String name;
+	public Double salary;
+	
+	
+	
+
+}

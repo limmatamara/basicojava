@@ -1,0 +1,26 @@
+package estruturaCondicional;
+
+import java.util.Scanner;
+
+public class proposto4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int inicio = sc.nextInt();
+		int fim = sc.nextInt();
+		
+		if (inicio > 0 && inicio < 12) {
+			if (fim > 0 && fim < 12) {
+				int resultado = 24 - fim - inicio; 
+				System.out.println("O JOGO DUROU " + resultado + "HORAS" );
+			} 
+			if (fim > 12 && fim < 24) {
+				int resultado = inicio - fim + 24;
+				System.out.println("O JOGO DUROU " + resultado + " HORAS" );
+			}
+		}
+		
+		sc.close();
+	}
+
+}

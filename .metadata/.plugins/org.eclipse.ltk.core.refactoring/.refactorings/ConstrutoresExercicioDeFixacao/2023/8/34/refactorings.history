@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;application.Program.main(...).name&apos; in &apos;application.Program.main(...)&apos; to field&#x0D;&#x0A;- Original project: &apos;ConstrutoresExercicioDeFixacao&apos;&#x0D;&#x0A;- Original element: &apos;application.Program.main(...).name&apos;&#x0D;&#x0A;- Field name: &apos;name&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;name&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;application{Program.java" name="name" selection="338 20" stamp="1692884999962" static="true" version="1.0" visibility="2"/>
+</session>

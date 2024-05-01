@@ -1,0 +1,15 @@
+package estruturaCondicional;
+
+import java.util.Scanner;
+
+public class proposto2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int numero = sc.nextInt();
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,62 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Quantas pessoas serão digitadas? ");
+		int n = sc.nextInt();
+		
+		double altura = 0.0;
+		char genero = ' ';
+		List<Pessoa> listaDePessoas = new ArrayList<>();
+		
+		
+		for (int i=1; i<=n ; i++) {
+			System.out.print("Altura da " + i + "a pessoa: ");
+			altura = sc.nextDouble();
+			System.out.print("Gênero da " + i + "a pessoa: ");
+			genero = sc.next().charAt(0);
+			
+			Pessoa pessoa =  new Pessoa(altura, genero);
+			listaDePessoas.add(pessoa);		
+		}
+		
+		menorAltura(listaDePessoas);
+		maiorAltura(listaDePessoas);
+		
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+	
+	public static void menorAltura(List<Pessoa> listaDePessoas) {
+		double menorValor = Double.MIN_VALUE;
+		for (Pessoa pessoa : listaDePessoas) {
+			if (pessoa.getAltura() > menorValor) {
+				menorValor = pessoa.getAltura();
+			}
+			System.out.println(menorValor);
+		}
+	}
+	
+	public static void maiorAltura(List<Pessoa> listaDePessoas) {
+		double maiorValor = Double.MIN_VALUE;
+		for (Pessoa pessoa : listaDePessoas) {
+			if (pessoa.getAltura() > maiorValor) {
+			}
+			System.out.println(maiorValor);
+		}
+	}
+
+}
